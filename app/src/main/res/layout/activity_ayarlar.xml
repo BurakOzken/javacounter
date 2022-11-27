@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AyarlarActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="202dp"
+                android:layout_height="47dp"
+                android:text="ÜST LİMİT"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <Button
+                android:id="@+id/btn_up_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/up_value"
+                app:layout_constraintEnd_toStartOf="@+id/up_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/up_value" />
+
+            <Button
+                android:id="@+id/btn_up_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/up_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/up_value"
+                app:layout_constraintTop_toTopOf="@+id/up_value"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <CheckBox
+                android:id="@+id/up_vib"
+                android:layout_width="125dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="28dp"
+                android:text="Titreşim"
+                app:layout_constraintEnd_toEndOf="@+id/up_value"
+                app:layout_constraintStart_toStartOf="@+id/up_value"
+                app:layout_constraintTop_toBottomOf="@+id/up_value" />
+
+            <CheckBox
+                android:id="@+id/up_sound"
+                android:layout_width="120dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="28dp"
+                android:text="Ses Uyarısı"
+                app:layout_constraintEnd_toEndOf="@+id/up_vib"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/up_vib"
+                app:layout_constraintTop_toBottomOf="@+id/up_vib" />
+
+            <EditText
+                android:id="@+id/up_value"
+                android:layout_width="125dp"
+                android:layout_height="49dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.367" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_low_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                app:layout_constraintBottom_toBottomOf="@+id/low_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/low_value"
+                app:layout_constraintTop_toTopOf="@+id/low_value"
+                app:layout_constraintVertical_bias="0.416" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="205dp"
+                android:layout_height="54dp"
+                android:text="ALT LİMİT"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.573"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <Button
+                android:id="@+id/btn_low_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                app:layout_constraintBottom_toBottomOf="@+id/low_value"
+                app:layout_constraintEnd_toStartOf="@+id/low_value"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/low_value"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/low_value"
+                android:layout_width="136dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:inputType="numberSigned"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.534"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.27" />
+
+            <CheckBox
+                android:id="@+id/low_vib"
+                android:layout_width="137dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="16dp"
+                android:text="Titreşim"
+                app:layout_constraintEnd_toEndOf="@+id/low_value"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/low_value"
+                app:layout_constraintTop_toBottomOf="@+id/low_value" />
+
+            <CheckBox
+                android:id="@+id/low_sound"
+                android:layout_width="136dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:text="Ses Uyarısı"
+                app:layout_constraintEnd_toEndOf="@+id/low_vib"
+                app:layout_constraintStart_toStartOf="@+id/low_vib"
+                app:layout_constraintTop_toBottomOf="@+id/low_vib" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
